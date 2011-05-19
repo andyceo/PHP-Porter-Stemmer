@@ -24,6 +24,15 @@ class Lingua_Stem_Ru {
   private $Stem_Caching = 0;
   private $Stem_Cache = array();
 
+
+  function __construct() {
+
+  }
+
+  function __destruct() {
+
+  }
+
   /**
    *
    */
