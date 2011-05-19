@@ -17,8 +17,9 @@ class PHPPorterStemmer {
     if ($this->get_lang() == 'ru') {
       require_once(__DIR__ . '/Lingua_Stem_Ru.class.php');
       $stemmer = new Lingua_Stem_Ru();
-      $stemmer->stem_word();
+      return  $stemmer->stem_word($word);
     }
+    return FALSE;
   }
 
   public function set_lang($lang) {
