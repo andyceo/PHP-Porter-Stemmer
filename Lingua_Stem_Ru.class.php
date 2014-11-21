@@ -74,7 +74,7 @@ class Lingua_Stem_Ru {
    *
    */
   public function stem_word($word) {
-    $word = mb_strtolower($word);
+    $word = mb_strtolower($word, 'UTF-8');
     $word = str_replace('ё', 'е', $word);
 
     // Check against cache of stemmed words
